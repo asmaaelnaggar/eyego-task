@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eyego Dashboard Task
 
-## Getting Started
+A responsive dashboard application built as part of the **Frontend Internship technical task for Eyego**.
+The project demonstrates authentication, data management, visualization, and Dockerized deployment using modern frontend technologies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+* **Next.js (React Framework)**
+* **Tailwind CSS**
+* **Redux Toolkit**
+* **Recharts**
+* **Docker**
+* **JavaScript / TypeScript**
+
+---
+
+## 📊 Features
+
+### Authentication
+
+* Simple login system using a **mocked authentication API**
+* User session stored in Redux state
+
+### Dashboard
+
+* Responsive layout built with **Tailwind CSS**
+* Mobile-friendly design
+
+### Data Table
+
+The dashboard includes a dynamic table with:
+
+* Sorting
+* Filtering
+* Pagination
+* Export options:
+
+  * **PDF Export**
+  * **Excel (XLSX) Export**
+
+### Chart Visualization
+
+Data is visualized using **Recharts** to provide a clear overview of statistics and analytics.
+
+### State Management
+
+The application uses **Redux Toolkit** for managing global state including:
+
+* Authentication state
+* Table data
+* Dashboard statistics
+
+### Dockerized Application
+
+The project is fully containerized using **Docker** to ensure easy setup and deployment.
+
+---
+
+## 📦 Project Structure
+
+```
+app/
+components/
+redux/
+hooks/
+public/
+styles/
+dockerfile
+package.json
+README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ Clone the Repository
 
-## Learn More
+```
+git clone https://github.com/asmaaelnaggar/eyego-task.git
+```
 
-To learn more about Next.js, take a look at the following resources:
+```
+cd eyego-task
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2️⃣ Install Dependencies
 
-## Deploy on Vercel
+```
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3️⃣ Run Development Server
+
+```
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🐳 Docker Setup
+
+Build Docker Image
+
+```
+docker build -t eyego-dashboard .
+```
+
+Run Container
+
+```
+docker run -p 3000:3000 eyego-dashboard
+```
+
+Then open:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🎥 Demo
+
+A recorded demo explaining the dashboard features, authentication, table operations, charts, and Docker setup is included with the task submission.
+
+---
+
+## 📝 Implementation Approach
+
+1. **Next.js** was used to structure the dashboard and handle routing.
+2. **Redux Toolkit** manages authentication state and dashboard data.
+3. **Tailwind CSS** provides a responsive and clean UI design.
+4. **Recharts** was integrated to display analytics visually.
+5. The data table supports **sorting, filtering, pagination, and exporting**.
+6. The entire application is **Dockerized** to ensure consistent environment setup for testing and deployment.
+
+---
+
+## 👩‍💻 Author
+
+Developed by **Asmaa Elnaggar**
+Frontend Developer
